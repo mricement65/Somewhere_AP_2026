@@ -1,0 +1,9 @@
+-- Q03 | Save position
+-- Statement: EXECUTE position_save(500,3,2.5,-4);
+-- PostgreSQL 17.12
+Update on app_user  (cost=0.28..8.29 rows=1 width=10) (actual time=0.031..0.031 rows=1 loops=1)
+  ->  Index Scan using app_user_pkey on app_user  (cost=0.28..8.29 rows=1 width=18) (actual time=0.010..0.011 rows=1 loops=1)
+        Index Cond: (user_id = '500'::bigint)
+  Buffers: shared hit=6
+Planning Time: 0.039 ms
+Execution Time: 0.203 ms

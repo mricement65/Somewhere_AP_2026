@@ -1,0 +1,10 @@
+-- Q12 | Purge 100 expired sessions
+-- Statement: EXECUTE sessions_expire;
+-- PostgreSQL 17.12
+Delete on web_session  (cost=0.00..23.50 rows=100 width=6) (actual time=0.022..0.034 rows=100 loops=1)
+  ->  Seq Scan on web_session  (cost=0.00..23.50 rows=100 width=6) (actual time=0.010..0.020 rows=100 loops=1)
+        Filter: (expires_at <= CURRENT_TIMESTAMP)
+        Rows Removed by Filter: 900
+  Buffers: shared hit=12
+Planning Time: 0.030 ms
+Execution Time: 0.064 ms

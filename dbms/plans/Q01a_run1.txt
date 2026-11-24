@@ -1,0 +1,7 @@
+-- Q01a | New account
+-- Statement: EXECUTE user_login('new-google','New Player');
+-- PostgreSQL 17.12
+Insert on app_user  (cost=0.00..0.01 rows=1 width=33) (actual time=0.031..0.031 rows=1 loops=1)
+  ->  Result  (cost=0.00..0.01 rows=1 width=33) (actual time=0.010..0.010 rows=1 loops=1)
+Planning Time: 0.082 ms
+Execution Time: 1.356 ms

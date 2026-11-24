@@ -1,0 +1,8 @@
+-- Q06 | Place in empty cell
+-- Statement: EXECUTE block_place(12,1,12,'sand');
+-- PostgreSQL 17.12
+Insert on world_block  (cost=0.00..0.01 rows=1 width=45) (actual time=0.034..0.034 rows=1 loops=1)
+  ->  Result  (cost=0.00..0.01 rows=1 width=45) (actual time=0.012..0.012 rows=1 loops=1)
+  Buffers: shared hit=4 dirtied=1
+Planning Time: 0.058 ms
+Execution Time: 0.186 ms

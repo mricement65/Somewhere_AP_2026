@@ -1,0 +1,7 @@
+-- Q04 | Load world
+-- Statement: EXECUTE world_load;
+-- PostgreSQL 17.12
+Seq Scan on world_block  (cost=0.00..11.27 rows=427 width=45) (actual time=0.021..0.063 rows=427 loops=1)
+  Buffers: shared hit=8
+Planning Time: 0.038 ms
+Execution Time: 0.131 ms

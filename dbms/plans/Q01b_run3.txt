@@ -1,0 +1,7 @@
+-- Q01b | Returning account
+-- Statement: EXECUTE user_login('g-500','Updated Player');
+-- PostgreSQL 17.12
+Insert on app_user  (cost=0.00..0.01 rows=1 width=???)
+  ->  Result  (cost=0.00..0.01 rows=1 width=???)
+Planning Time: 0.050 ms
+Execution Time: 0.117 ms

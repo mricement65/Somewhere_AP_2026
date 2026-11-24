@@ -1,0 +1,12 @@
+-- Q08 | Get live session and profile
+-- Statement: EXECUTE session_get('s-500');
+-- PostgreSQL 17.12
+Nested Loop Left Join  (cost=0.57..16.61 rows=1 width=249) (actual time=0.038..0.039 rows=1 loops=1)
+  ->  Index Scan using web_session_pkey on web_session s  (cost=0.28..8.30 rows=1 width=??) (actual time=0.020..0.021 rows=1 loops=1)
+        Index Cond: (session_id = 's-500'::text)
+        Filter: (expires_at > CURRENT_TIMESTAMP)
+  ->  Index Scan using app_user_pkey on app_user u  (cost=0.28..8.29 rows=1 width=??) (actual time=0.008..0.009 rows=1 loops=1)
+        Index Cond: (user_id = s.user_id)
+  Buffers: shared hit=8
+Planning Time: 0.092 ms
+Execution Time: 0.363 ms

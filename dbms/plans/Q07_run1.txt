@@ -1,0 +1,9 @@
+-- Q07 | Remove occupied cell
+-- Statement: EXECUTE block_remove(0,0,0);
+-- PostgreSQL 17.12
+Delete on world_block  (cost=0.28..8.29 rows=1 width=6) (actual time=0.025..0.025 rows=1 loops=1)
+  ->  Index Scan using world_block_pkey on world_block  (cost=0.28..8.29 rows=1 width=6) (actual time=0.012..0.013 rows=1 loops=1)
+        Index Cond: ((x = 0) AND (y = 0) AND (z = 0))
+  Buffers: shared hit=5 dirtied=1
+Planning Time: 0.057 ms
+Execution Time: 0.082 ms

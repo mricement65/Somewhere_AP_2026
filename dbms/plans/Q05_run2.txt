@@ -1,0 +1,10 @@
+-- Q05 | Seed empty world
+-- Statement: EXECUTE world_seed;
+-- PostgreSQL 17.12
+Insert on world_block  (cost=0.00..27.60 rows=427 width=45) (actual time=0.511..1.591 rows=427 loops=1)
+  ->  Append  (cost=0.00..27.60 rows=427 width=45) (actual time=0.027..0.162 rows=427 loops=1)
+        ->  HashAggregate  (cost=0.00..0.01 rows=400 width=45)
+              ->  Result  (cost=0.00..0.01 rows=400 width=45)
+  Buffers: shared hit=52
+Planning Time: 0.214 ms
+Execution Time: 1.805 ms

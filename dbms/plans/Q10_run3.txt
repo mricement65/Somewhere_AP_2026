@@ -1,0 +1,10 @@
+-- Q10 | Touch live session
+-- Statement: EXECUTE session_touch('s-500','2100-02-01');
+-- PostgreSQL 17.12
+Update on web_session  (cost=0.28..8.30 rows=1 width=56) (actual time=0.021..0.021 rows=1 loops=1)
+  ->  Index Scan using web_session_pkey on web_session  (cost=0.28..8.30 rows=1 width=56) (actual time=0.009..0.010 rows=1 loops=1)
+        Index Cond: (session_id = 's-500'::text)
+        Filter: (expires_at > CURRENT_TIMESTAMP)
+  Buffers: shared hit=6
+Planning Time: 0.022 ms
+Execution Time: 0.043 ms

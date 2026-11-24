@@ -1,0 +1,8 @@
+-- Q09b | Update session
+-- Statement: EXECUTE session_set('s-500',500,'2100-02-01','{}');
+-- PostgreSQL 17.12
+Insert on web_session  (cost=0.00..0.01 rows=1 width=??) (actual time=0.052..0.052 rows=1 loops=1)
+  ->  Result  (cost=0.00..0.01 rows=1 width=??) (actual time=0.014..0.014 rows=1 loops=1)
+  Buffers: shared hit=7 dirtied=2
+Planning Time: 0.066 ms
+Execution Time: 0.283 ms

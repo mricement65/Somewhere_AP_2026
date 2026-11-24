@@ -1,0 +1,8 @@
+-- Q02 | Load user
+-- Statement: EXECUTE user_by_id(500);
+-- PostgreSQL 17.12
+Index Scan using app_user_pkey on app_user  (cost=0.28..8.29 rows=1 width=79) (actual time=0.020..0.021 rows=1 loops=1)
+  Index Cond: (user_id = '500'::bigint)
+  Buffers: shared hit=4
+Planning Time: 0.037 ms
+Execution Time: 0.057 ms

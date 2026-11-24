@@ -1,0 +1,9 @@
+-- Q11 | Destroy session
+-- Statement: EXECUTE session_destroy('s-500');
+-- PostgreSQL 17.12
+Delete on web_session  (cost=0.28..8.30 rows=1 width=6) (actual time=0.027..0.027 rows=1 loops=1)
+  ->  Index Scan using web_session_pkey on web_session  (cost=0.28..8.30 rows=1 width=6) (actual time=0.012..0.013 rows=1 loops=1)
+        Index Cond: (session_id = 's-500'::text)
+  Buffers: shared hit=5 dirtied=1
+Planning Time: 0.049 ms
+Execution Time: 0.132 ms
